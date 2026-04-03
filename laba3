@@ -1,0 +1,4 @@
+# Создаёте репозиторий на GitHub (НЕ инициализируете с README)
+# Затем клонируете локально:
+git clone https://github.com/Martireez/book_catalog.git
+cd book_catalog
