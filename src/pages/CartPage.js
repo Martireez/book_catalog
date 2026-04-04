@@ -1,10 +1,13 @@
 import React from 'react';
 import Cart from '../components/Cart';
 
-function CartPage({ cartItems, onRemoveFromCart }) {
+function CartPage(props) {
   return (
     <div>
-      <Cart cartItems={cartItems} onRemoveFromCart={onRemoveFromCart} />
+      <Cart 
+        cartItems={props.cartItems} 
+        onRemoveFromCart={props.onRemoveFromCart} 
+      />
     </div>
   );
 }

@@ -1,11 +1,14 @@
 import React from 'react';
 import BookList from '../components/BookList';
 
-function CatalogPage({ books, onAddToCart }) {
+function CatalogPage(props) {
   return (
     <div>
       <h1>Каталог книг</h1>
-      <BookList books={books} onAddToCart={onAddToCart} />
+      <BookList 
+        books={props.books} 
+        onAddToCart={props.onAddToCart} 
+      />
     </div>
   );
 }
